@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Neat Declarative UI with Jetpack Compose</string>
+    <string name="app_button_declarativeUiSample">선언형 UI 샘플</string>
+    <string name="app_button_musicUiSample">음악 UI 샘플</string>
 </resources>
