@@ -12,10 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NeatDeclarativeUIWithJetpackCompose"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:launchMode="singleInstance"
             android:theme="@style/Theme.NeatDeclarativeUIWithJetpackCompose">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +24,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.declarative.DeclarativeUiSampleActivity"
+            android:exported="true"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ui.music.MusicUiSampleActivity"
+            android:exported="true"
+            android:launchMode="singleInstance" />
     </application>
 
 </manifest>

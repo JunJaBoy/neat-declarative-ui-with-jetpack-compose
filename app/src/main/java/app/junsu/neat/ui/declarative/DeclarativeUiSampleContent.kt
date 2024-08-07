@@ -1,4 +1,4 @@
-package app.junsu.neat.ui
+package app.junsu.neat.ui.declarative
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -12,10 +12,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
-fun MainContent(
+fun DeclarativeUiSampleContent(
     modifier: Modifier = Modifier,
 ) {
     val (checked, onCheckedChange) = remember { mutableStateOf(false) }
@@ -40,12 +39,4 @@ fun MainContent(
             )
         }
     }
-}
-
-@Preview(
-    showSystemUi = true,
-)
-@Composable
-private fun MainContentPreview() {
-    MainContent()
 }
